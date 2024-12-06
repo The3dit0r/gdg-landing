@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/google-sans");
 
 html {
   height: 100%;
@@ -11,8 +11,8 @@ body {
 
   background-color: #ffffff;
 
-  --title: "Bitter", serif;
-  --content: "Space Mono", monospace;
+  --ff-title: "Google Sans", serif;
+  --ff-content: "Google Sans", monospace;
 
   --accent-color: #1a2a56;
   --color-01: #333333;
@@ -32,7 +32,7 @@ body {
 
   font-size: 14px;
 
-  font-family: "Space Mono", monospace;
+  font-family: var(--ff-content);
   overflow: hidden;
 }
 
@@ -44,13 +44,13 @@ body {
 
 h1,
 .title {
-  font-family: "Bitter", serif;
+  font-family: var(--ff-title);
   font-size: 2.3em;
   font-weight: 700;
 }
 
 h2 {
-  font-family: "Bitter", serif;
+  font-family: var(--ff-title);
 }
 
 p,
