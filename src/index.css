@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+
+  background-color: #ffffff;
+
+  --title: "Bitter", serif;
+  --content: "Space Mono", monospace;
+
+  --accent-color: #1a2a56;
+  --color-01: #333333;
+  --color-02: #777777;
+
+  height: 100%;
+  width: 100%;
+
+  --page-pad: max(82px);
+
+  --gg-red: #e94436;
+  --gg-green: #109d58;
+  --gg-blue: #4385f3;
+  --gg-yellow: #fabc05;
+
+  --accent: #1a2a56;
+
+  font-size: 14px;
+
+  font-family: "Space Mono", monospace;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+h1,
+.title {
+  font-family: "Bitter", serif;
+  font-size: 2.3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Bitter", serif;
+}
+
+p,
+.content {
+  font-size: 1.5em;
+}
+
+.section {
+  width: calc(100% - var(--page-pad) * 2);
+  margin: 24px auto;
+  min-height: 100px;
+
+  max-width: 1500px;
+
+  > .full {
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.header-banner {
+  width: calc(50vw);
+  background-size: cover;
+  background-position: center;
+
+  aspect-ratio: 1.78;
+
+  box-shadow: #32325d40 0px 2px 5px -1px, #603b3b4d 0px 1px 3px -1px;
+  border-radius: 8px;
+}

@@ -1,0 +1,51 @@
+.event-box {
+  height: 400px;
+
+  display: flex;
+  gap: 32px;
+
+  padding: 24px;
+  margin-bottom: 18px;
+
+  /* border: solid var(--accent);
+  border-bottom: 1px;
+  border-bottom: 2px solid; */
+
+  /* .border {
+    border-left: 2px solid;
+  } */
+}
+
+.event-box > .banner {
+  flex: 1;
+  height: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 16px;
+  background-color: #fcfcfc;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.event-box > .info {
+  width: max(40vw, 350px);
+  padding: 24px 16px;
+}
+
+.para-test {
+  display: -webkit-box;
+  line-clamp: 3;
+
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  text-align: justify;
+
+  font-size: 1.3em;
+}

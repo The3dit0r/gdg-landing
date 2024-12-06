@@ -1,0 +1,150 @@
+/* # -- Flexing -- # */
+
+.flex {
+  display: flex;
+}
+
+.flexing {
+  flex: 1;
+}
+
+.g5 {
+  gap: 5px;
+}
+
+.g10 {
+  gap: 10px;
+}
+
+.g16 {
+  gap: 16px;
+}
+
+.flex.coll {
+  flex-direction: column;
+}
+
+.flex.inline {
+  display: inline-flex;
+}
+
+.aictr {
+  align-items: center;
+}
+
+.aiart {
+  align-items: flex-start;
+}
+
+.aiend {
+  align-items: flex-end;
+}
+
+.jcctr {
+  justify-content: center;
+}
+
+.spevl {
+  justify-content: space-evenly;
+}
+
+.spbtw {
+  justify-content: space-between;
+}
+
+.spard {
+  justify-content: space-around;
+}
+
+.jcart {
+  justify-content: flex-start;
+}
+
+.jcend {
+  justify-content: flex-end;
+}
+
+/*# -- Other stuff -- #*/
+
+.clickable {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.clickable:hover {
+  transform: scale(1);
+}
+
+.clickable:active {
+  transform: scale(0.9);
+}
+
+.usn {
+  user-select: none;
+}
+
+.rotate-90 {
+  transition: transform 0.16s;
+}
+
+.active-gb .rotate-90,
+.active > .rotate-90 {
+  transform: rotate(90deg);
+}
+
+.title {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.uppcs > *,
+.uppc {
+  text-transform: uppercase;
+}
+
+.tactr {
+  text-align: center;
+}
+
+.caps > *,
+.cap {
+  text-transform: capitalize;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.outer-shadow-2 {
+  box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+}
+
+/* # -- Keyframes and co. -- # */
+
+.fade-in {
+  animation: key-fade-in 0.2s linear 0s 1 normal forwards;
+}
+
+@keyframes key-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

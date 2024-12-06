@@ -1,0 +1,78 @@
+.faq-frame {
+  font-size: 1.25em;
+  border: 1px solid;
+  border-radius: 10px;
+
+  padding: 0 32px;
+  margin: 16px 64px;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  overflow: hidden;
+
+  height: 100px;
+  transition: height 0.2s;
+
+  .dft-icon {
+    transition: transform 0.2s;
+    transform-origin: center;
+  }
+
+  > .q {
+    font-family: var(--title);
+    font-weight: 700;
+
+    font-size: 1.5em;
+    padding: 26px 0;
+    cursor: pointer;
+  }
+
+  > .a {
+    border-top: 1px solid;
+
+    font-size: 1em;
+    white-space: pre-wrap;
+    padding: 13px 0 26px 0;
+    line-height: 1.5;
+  }
+}
+
+.faq-frame.rainbow {
+  background-image: linear-gradient(0deg, #0000, #0000 10px, #fff 10px, #fff),
+    linear-gradient(
+      90deg,
+      var(--gg-red),
+      var(--gg-red) 60px,
+      var(--gg-green) 60px,
+      var(--gg-green) 120px,
+      var(--gg-blue) 120px,
+      var(--gg-blue) 180px,
+      var(--gg-yellow) 180px,
+      var(--gg-yellow) 240px
+    );
+
+  background-size: auto, 240px;
+}
+
+.faq-frame.expanded {
+  height: calc(120px + var(--a-height));
+
+  .dft-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.faq-frame:nth-child(1) {
+  border-color: var(--gg-blue);
+}
+
+.faq-frame:nth-child(3) {
+  border-color: var(--gg-green);
+}
+
+.faq-frame:nth-child(4) {
+  border-color: var(--gg-yellow);
+}
+
+.faq-frame:nth-child(2) {
+  border-color: var(--gg-red);
+}

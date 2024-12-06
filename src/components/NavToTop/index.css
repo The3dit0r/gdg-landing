@@ -1,0 +1,8 @@
+.nav-to-top {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: var(--accent);
+
+  transition: all 0.1s;
+}

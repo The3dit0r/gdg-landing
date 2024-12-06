@@ -1,0 +1,9 @@
+.main-banner {
+  background-image: url("/public/banner.webp");
+  height: 300px;
+
+  width: calc(100% - 500px);
+  background-size: cover;
+
+  border-radius: 16px;
+}

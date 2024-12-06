@@ -1,0 +1,223 @@
+pre {
+  background-color: #1e1e2e;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* # -- Flexing -- # */
+
+.flex {
+  display: flex;
+}
+
+.flexing {
+  flex: 1;
+}
+
+.g5 {
+  gap: 5px;
+}
+
+.g10 {
+  gap: 10px;
+}
+
+.g16 {
+  gap: 16px;
+}
+
+.flex.coll {
+  flex-direction: column;
+}
+
+.flex.inline {
+  display: inline-flex;
+}
+
+.aictr {
+  align-items: center;
+}
+
+.aiart {
+  align-items: flex-start;
+}
+
+.aiend {
+  align-items: flex-end;
+}
+
+.jcctr {
+  justify-content: center;
+}
+
+.spevl {
+  justify-content: space-evenly;
+}
+
+.spbtw {
+  justify-content: space-between;
+}
+
+.spard {
+  justify-content: space-around;
+}
+
+.jcart {
+  justify-content: flex-start;
+}
+
+.jcend {
+  justify-content: flex-end;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# -- Other stuff -- #*/
+
+.clickable {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.clickable:hover {
+  transform: scale(1);
+}
+
+.clickable:active {
+  transform: scale(0.9);
+}
+
+.usn {
+  user-select: none;
+}
+
+.rotate-90 {
+  transition: transform 0.16s;
+}
+
+.active-gb .rotate-90,
+.active > .rotate-90 {
+  transform: rotate(90deg);
+}
+
+.title {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.uppcs > *,
+.uppc {
+  text-transform: uppercase;
+}
+
+.tactr {
+  text-align: center;
+}
+
+.caps > *,
+.cap {
+  text-transform: capitalize;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.outer-shadow-2 {
+  box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+}
+
+/* # -- Keyframes and co. -- # */
+
+.fade-in {
+  animation: key-fade-in 0.2s linear 0s 1 normal forwards;
+}
+
+@keyframes key-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.move-up-down {
+  --dy: 20px;
+  animation: key-move-up-down 1s ease-in-out infinite;
+}
+
+@keyframes key-move-up-down {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(var(--dy));
+  }
+}
+
+/* # -- Testing -- # */
+
+.test {
+  background-color: hsl(0deg, 0%, 100%);
+  background-image: linear-gradient(
+      0deg,
+      #0001,
+      #0001 1px,
+      #0000 1px,
+      #0000 2px
+    ),
+    linear-gradient(270deg, #0001, #0001 1px, #0000 1px, #0000 2px);
+
+  background-size: 100% 100px, 100px 100%;
+  background-repeat: repeat-y, repeat-x;
+}
+
+.btt {
+  padding: 8px 16px;
+  border: 2px solid var(--accent);
+  width: fit-content;
+
+  cursor: pointer;
+  transition: all 0.1s;
+
+  user-select: none;
+}
+
+.btt.bold,
+.btt:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.btt:active {
+  transform: scale(0.98);
+}
+
+/* -- Definition of custom properties --  */
+
+@property --perf {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}

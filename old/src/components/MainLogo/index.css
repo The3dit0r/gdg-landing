@@ -1,0 +1,74 @@
+.dft-main-logo {
+  height: max(48px, calc(150px - max(0, var(--scroll) - 200) * 1px));
+
+  position: sticky;
+  top: 0px;
+  padding: 16px;
+
+  width: calc(100% - 32px);
+
+  font-weight: 600;
+  user-select: none;
+
+  background-color: #fff;
+
+  --perf: var(--scroll) / (var(--height) - 120);
+  font-size: calc(2.5em * (1 - var(--perf)));
+  gap: calc(32px * (1 - var(--perf)));
+
+  transition: box-shadow 0.2s;
+
+  > .img {
+    height: 100%;
+
+    display: inline-block;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    flex: 1;
+    min-width: 0px;
+  }
+
+  .img.right {
+    background-image: url("./right.png");
+    background-position: 0px;
+  }
+
+  .text {
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: calc(1 - var(--perf) * 1.5);
+  }
+
+  .img.left {
+    background-image: url("./left.png");
+    background-position: calc(100% - 0px);
+  }
+
+  .subtext {
+    font-size: 0.6em;
+    font-weight: 400;
+  }
+
+  .status-bar {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+
+    height: 5px;
+    width: 0px;
+
+    background-color: #109d58;
+    will-change: width;
+  }
+}
+
+.dft-main-logo.show-shadow {
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+
+  > .status-bar {
+    width: calc((var(--scroll) - var(--height)) * 1px);
+  }
+}

@@ -1,0 +1,18 @@
+.section.dft-test {
+  height: calc(100vh - 140px);
+
+  > .banner {
+    background-image: url("./assets/headerb.webp");
+    width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 18px;
+
+    aspect-ratio: 2560 / 650;
+  }
+
+  /* border-bottom: 2px dashed #000; */
+}

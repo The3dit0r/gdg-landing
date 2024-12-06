@@ -1,0 +1,84 @@
+.slogans {
+  height: 160px;
+  padding: 0px;
+
+  margin: 120px auto 0 auto;
+  width: 100%;
+
+  border: solid var(--accent);
+  border-width: 2px 0px;
+
+  > .box {
+    flex: 1;
+    padding-left: 40px;
+
+    font-size: 60px;
+
+    border-left: 2px solid var(--accent);
+    height: 100%;
+
+    color: var(--accent);
+
+    b {
+      color: var(--gg-blue);
+      transition: color 0.2s;
+    }
+
+    --perf: 0%;
+
+    background-image: linear-gradient(
+      0deg,
+      var(--gg-blue),
+      var(--gg-blue) var(--perf),
+      #0000 var(--perf),
+      #0000
+    );
+
+    transition: --perf 0.2s, color 0.2s;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .box:not(.def):hover {
+    --perf: 10%;
+  }
+
+  .box:not(.def).active {
+    --perf: 100%;
+    color: #fff;
+
+    b {
+      color: var(--accent);
+    }
+  }
+
+  .box.def {
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+
+    padding-right: 40px;
+    flex: 0.9;
+  }
+}
+
+.clip-art {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 90%;
+}
+
+.clip-art.take {
+  background-image: url("./assets/take.svg");
+}
+
+.clip-art.target {
+  background-image: url("./assets/target.svg");
+}
+
+.clip-art.together {
+  background-image: url("./assets/together.svg");
+  background-size: 95%;
+}
