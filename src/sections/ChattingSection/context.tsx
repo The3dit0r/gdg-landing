@@ -41,7 +41,7 @@ async function retieveMessage(
 }
 
 export function ChatContextProvider({ children }: { children: ReactNode }) {
-  const [showChat, setShowChat] = useState(true);
+  const [showChat, setShowChat] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const [messages, setMessages] = useState([
