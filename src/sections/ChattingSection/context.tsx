@@ -7,6 +7,7 @@ import {
 } from "react";
 import ChattingSection from ".";
 import axios, { AxiosResponse } from "axios";
+import { getChatServer } from "../../util";
 
 export type ChatType = {
   messages: { is_user?: boolean; message: string; timestamp: number }[];
@@ -32,7 +33,7 @@ async function retieveMessage(
 ): Promise<AxiosResponse<{ message: string; assistant: string }>> {
   const options = {
     method: "POST",
-    url: "http://ec2-13-236-93-98.ap-southeast-2.compute.amazonaws.com/gemini/chat",
+    url: getChatServer(),
     headers: { "Content-Type": "application/json" },
     data: { message: m },
   };
