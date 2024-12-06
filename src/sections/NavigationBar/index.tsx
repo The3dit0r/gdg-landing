@@ -52,7 +52,7 @@ export default function NavigationBar() {
           className="logo-banner flex jcctr coll"
           style={{ opacity, transition: "opacity 0.2s" }}
         >
-          <h1>Google Development Group</h1>
+          <h1>Google Developer Group</h1>
           <div className="flex aictr g10">
             <span style={{ color: "var(--gg-blue)" }}>On Campus</span>
             <span>&bull;</span>

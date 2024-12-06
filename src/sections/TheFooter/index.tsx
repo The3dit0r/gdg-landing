@@ -12,7 +12,7 @@ export default function TheFoooooooooter({}: Props) {
             <img src={window.location.origin + "/favicon.ico"} />
             <div>
               <div>
-                <b>Google Development Group</b>
+                <b>Google Developer Group</b>
               </div>
               <div>On Campus • FPT University HCMC</div>
             </div>
